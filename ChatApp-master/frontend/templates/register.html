@@ -1,0 +1,51 @@
+<html>
+
+<head>
+    <title>Welcome to chat app</title>
+</head>
+
+<body class="body" ng-app="chatApplication" ng-controller="registerController">
+    <h2 class="h2"><b>Welcome To Chat App</b></h2>
+    <div class="form-fields">
+        <h3 class="h3"><b>Registration</b></h3>
+
+        <div>
+            <div class="label">
+                <label for="firstname">First name: </label><br>
+            </div>
+            <input type="text" class="text-field" placeholder="Enter first name " ng-model="firstname">
+        </div>
+        <div>
+            <div class="label">
+                <label for="lastname">Last name: </label><br>
+            </div>
+            <input type="text" class="text-field" placeholder="Enter last name " ng-model="lastname">
+        </div>
+        <div>
+            <div class="label">
+                <label for="mobileno">Mobile number: </label><br>
+            </div>
+            <input type="text" class="text-field" placeholder="Enter mobile number" ng-model="mobileno">
+        </div>
+        <div>
+            <div class="label">
+                <lable for="emailid">Email Id: </lable><br>
+            </div>
+            <input type="email" class="text-field" placeholder="Enter emailid" ng-model="emailid">
+        </div>
+        <div>
+            <div class="label">
+                <label for="password">Password: </label><br>
+            </div>
+            <input type="password" class="text-field" placeholder="Enter password" ng-model="password">
+        </div>
+        <div class="forgot-button">
+            <div class="login">
+                <a href="/#/login">log in? </a>
+            </div>
+            <button ui-sref="register" ng-click="register()" class="buttonregister">Register</button><br>
+        </div>
+    </div>
+</body>
+
+</html>

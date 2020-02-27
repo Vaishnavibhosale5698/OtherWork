@@ -1,0 +1,92 @@
+div#page {
+    border: 1px solid rgb(95, 162, 201);
+    width: 1298px;
+    margin: 0 auto;
+    padding: -60px;
+    text-align: center;
+    position: absolute;
+    background-color: rgb(94, 156, 185);
+}
+
+div {
+    text-align: center;
+}
+
+div#header {
+    border: 1px solid red;
+    font-size: 40px;
+    width: 1286px;
+    height: 38px;
+    position: relative;
+    left: 5px;
+    top: 6px;
+}
+
+.buttonlogout {
+    float: right;
+}
+
+div#menu {
+    border: 1px solid green;
+    width: 254px;
+    font-size: 28px;
+    float: left;
+    margin: 10px 0 10px 5px;
+    height: 500px;
+}
+
+.buttonlogout {
+    top: 100px;
+}
+
+.displayname {
+    font-size: 88%;
+    background-color:  rgb(94, 156, 185);
+    color : black;
+    border: 2px solid #e7e7e7; 
+
+    background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.displayname:hover {background-color: rgb(94, 156, 185);}
+
+#main-div {
+    width: 1018px;
+    border: 1px solid black;
+    height: 499px;
+    margin-left: 21%;
+    margin-top: 11px
+}
+
+#text-area {
+    width: 90%;
+    margin-left: -8%;
+    position: relative;
+    top: 27px;
+}
+
+#message-display {
+    width: 100%;
+    height: 432px;
+    overflow: visible;
+}
+
+#button-send {
+    position: relative;
+    left: 463px;
+}
+
+.contacts {
+    font-size: 147%;
+}

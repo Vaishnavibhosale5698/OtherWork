@@ -1,0 +1,46 @@
+<html>
+
+<head>
+    <title>Chat App</title>
+</head>
+
+<body ng-app="chatApplication" ng-controller="chatController">
+    <div id="page">
+        <div id="header">
+            Welcome to Chat Box {{firstname}}
+            <button ui-sref="logout" ng-click="logout()" class="buttonlogout">log out</button>
+        </div>
+        <div id="menu">
+            <div class="contacts">Contacts</div>
+            <div ng-repeat="x in allUser" ng-click=person(x) ng-show="currentUser!=x.emailid">
+                <button class="displayname">
+                    {{x.firstname}}
+                </button>
+            </div>
+        </div>
+        <div id="main-div">
+            <div id="message-display">
+                <div ng-repeat="y in getallMessages">
+                    <div>
+                        <span><strong>{{y.sendername}}:</strong>{{y.message}}</span>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <form>
+                    <div>
+                        <div>
+                            <textarea placeholder="Start conversation.." id="text-area" ng-model="message" required></textarea>
+                        </div>
+                        <div>
+                            <button type="submit" ng-click="send()" id="button-send">Send</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
